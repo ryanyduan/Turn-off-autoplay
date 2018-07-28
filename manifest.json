@@ -1,0 +1,16 @@
+{
+
+"name": "Disable Autoplay",
+"version": "1.0",
+"description": "Disable Autoplay automatically on Youtube", 
+"content_scripts": [
+  {
+  	"matches": ["https://*.youtube.com/*"],
+    "run_at": "document_idle",
+    "js": ["background.js"]
+  }
+],
+"manifest_version": 2
+
+}
+
